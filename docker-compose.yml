@@ -1,23 +1,20 @@
-version: '3.8'
-
 services:
-  app:
-    build: .
-    ports:
-      - "8080:8080"
-    depends_on:
-      - db
-    environment:
-      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/mi_base
-      SPRING_DATASOURCE_USERNAME: usuario
-      SPRING_DATASOURCE_PASSWORD: clave
-
   db:
-    image: postgres:15
-    restart: always
+    image: postgres:17
+    container_name: postgres-db-jpa-Arquetipo
     environment:
-      POSTGRES_DB: mi_base
-      POSTGRES_USER: usuario
-      POSTGRES_PASSWORD: clave
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypass
+      POSTGRES_DB: mydb
     ports:
       - "5432:5432"
+    networks:
+      - backend
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+networks:
+  backend:
+
+volumes:
+  pgdata:

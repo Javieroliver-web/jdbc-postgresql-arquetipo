@@ -4,15 +4,15 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>${groupId}</groupId>
-  <artifactId>${artifactId}</artifactId>
-  <version>${version}</version>
+  <groupId>com.example</groupId>
+  <artifactId>jpa-postgres-template</artifactId>
+  <version>1.0.0</version>
 
   <properties>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <main.class>${package}.Inicio</main.class>
+    <main.class>com.example.jpapostgres.Inicio</main.class>
   </properties>
 
   <dependencies>
