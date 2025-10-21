@@ -1,7 +1,5 @@
-package ${package};
-
-import ${package}.dao.AlumnoDAO;
-import ${package}.entity.Alumno;
+import dao.AlumnoDAO;
+import entity.Alumno;
 
 public class Inicio {
     public static void main(String[] args) {

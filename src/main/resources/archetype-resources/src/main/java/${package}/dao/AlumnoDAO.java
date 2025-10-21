@@ -1,9 +1,9 @@
-package ${package}.dao;
+package dao;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
-import ${package}.entity.Alumno;
+import entity.Alumno;
 
 public class AlumnoDAO {
       private EntityManagerFactory emf = Persistence.createEntityManagerFactory("alumnosPU");
