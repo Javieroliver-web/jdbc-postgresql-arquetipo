@@ -28,7 +28,7 @@
     </fileSet>
 
     <!-- Código Java -->
-    <fileSet filtered="true" packaged="true">
+    <fileSet filtered="true" packaged="false">
       <directory>src/main/java</directory>
       <includes>
         <include>**/*.java</include>
