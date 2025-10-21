@@ -18,7 +18,7 @@
   </requiredProperties>
 
   <fileSets>
-    <!-- Archivos de configuración en raíz -->
+    
     <fileSet filtered="true" packaged="false">
       <directory></directory>
       <includes>
@@ -27,7 +27,7 @@
       </includes>
     </fileSet>
 
-    <!-- Código Java -->
+   
     <fileSet filtered="true" packaged="false">
       <directory>src/main/java</directory>
       <includes>
@@ -35,7 +35,7 @@
       </includes>
     </fileSet>
 
-    <!-- Recursos (persistence.xml) -->
+    
     <fileSet filtered="true" packaged="false">
       <directory>src/main/resources</directory>
       <includes>

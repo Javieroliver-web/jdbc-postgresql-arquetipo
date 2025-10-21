@@ -9,6 +9,7 @@
   <version>${version}</version>
 
   <properties>
+    <package>edu.jdbc.app</package>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,28 +17,28 @@
   </properties>
 
   <dependencies>
-    <!-- Driver PostgreSQL -->
+    
     <dependency>
       <groupId>org.postgresql</groupId>
       <artifactId>postgresql</artifactId>
       <version>42.7.7</version>
     </dependency>
 
-    <!-- JPA API -->
+    
     <dependency>
       <groupId>jakarta.persistence</groupId>
       <artifactId>jakarta.persistence-api</artifactId>
       <version>3.1.0</version>
     </dependency>
 
-    <!-- Hibernate como implementación JPA -->
+    
     <dependency>
       <groupId>org.hibernate.orm</groupId>
       <artifactId>hibernate-core</artifactId>
       <version>6.4.4.Final</version>
     </dependency>
 
-    <!-- Logger -->
+    
     <dependency>
       <groupId>org.jboss.logging</groupId>
       <artifactId>jboss-logging</artifactId>
@@ -47,7 +48,7 @@
 
   <build>
     <plugins>
-      <!-- Compilación -->
+      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -57,7 +58,7 @@
         </configuration>
       </plugin>
 
-      <!-- Crear un fat jar con todas las dependencias -->
+      
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
@@ -83,7 +84,7 @@
         </executions>
       </plugin>
 
-      <!-- Para ejecutar desde Maven (opcional) -->
+      
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>

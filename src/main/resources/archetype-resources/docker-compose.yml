@@ -12,6 +12,7 @@ services:
       - backend
     volumes:
       - pgdata:/var/lib/postgresql/data
+
   app:
     build:
       context: .
