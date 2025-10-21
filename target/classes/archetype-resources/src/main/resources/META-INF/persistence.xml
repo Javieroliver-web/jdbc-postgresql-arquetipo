@@ -6,8 +6,8 @@
              version="3.1">
 
   <persistence-unit name="alumnosPU" transaction-type="RESOURCE_LOCAL">
-    <class>${package}.entity.Alumno</class>
-
+    <class>edu.jdbc.entity.Alumno</class>
+//corregir el class
     <properties>
       <!-- Datos de conexión a PostgreSQL (host = nombre del contenedor: db) -->
       <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://db:5432/mydb"/>
