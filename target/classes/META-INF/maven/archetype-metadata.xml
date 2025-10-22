@@ -7,7 +7,7 @@
 
   <id>jdbc-postgresql-arquetipo</id>
   
-  <name>JDBC PostgreSQL Archetype</name>
+  <name>jdbc-postgresql-arquetipo</name>
   
   <description>Arquetipo para proyectos JPA con Hibernate y PostgreSQL</description>
 
